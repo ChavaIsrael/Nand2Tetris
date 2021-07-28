@@ -1,0 +1,86 @@
+class Monsters{
+
+    field Monster monster1;
+    field Monster monster2;
+    field Monster monster3;
+    field Monster monster4;
+    field Monster monster5;
+    field Monster monster6;
+    field Monster monster7;
+    field Monster monster8;
+    field Monster monster9;
+
+    constructor Monsters new() {
+
+        let monster1 = Monster.new(31, 39, false);
+        let monster2 = Monster.new(5, 39+24, false);
+        let monster3 = Monster.new(23, 39+(24*2), false);
+        let monster4 = Monster.new(12, 39+(24*3), true);
+        let monster5 = Monster.new(1, 39+(24*4), false);
+        let monster6 = Monster.new(27, 39+(24*5), true);
+        let monster7 = Monster.new(18, 39+(24*6), false);
+        let monster8 = Monster.new(0, 39+(24*7), true);
+        let monster9 = Monster.new(20, 39+(24*8), false);
+
+        return this;
+    }
+
+    method void run(){
+        do monster1.startMoving();
+        do monster2.startMoving();
+        do monster3.startMoving();
+        do monster4.startMoving();
+        do monster5.startMoving();
+        do monster6.startMoving();
+        do monster7.startMoving();
+        do monster8.startMoving();
+        do monster9.startMoving();
+        return;
+    }
+
+    method boolean monsterExist(int x, int y){
+        if((monster1.getX() = x) & (monster1.getY() = y)){
+            return true;
+        }
+        if((monster2.getX() = x) & (monster2.getY() = y)){
+            return true;
+        }
+        if((monster3.getX() = x) & (monster3.getY() = y)){
+            return true;
+        }
+        if((monster4.getX() = x) & (monster4.getY() = y)){
+            return true;
+        }
+        if((monster5.getX() = x) & (monster5.getY() = y)){
+            return true;
+        }
+        if((monster6.getX() = x) & (monster6.getY() = y)){
+            return true;
+        }
+        if((monster7.getX() = x) & (monster7.getY() = y)){
+            return true;
+        }
+        if((monster8.getX() = x) & (monster8.getY() = y)){
+            return true;
+        }
+        if((monster9.getX() = x) & (monster9.getY() = y)){
+            return true;
+        }
+        return false;
+    }
+
+    method void dispose(){
+        do monster1.dispose();
+        do monster2.dispose();
+        do monster3.dispose();
+        do monster4.dispose();
+        do monster5.dispose();
+        do monster6.dispose();
+        do monster7.dispose();
+        do monster8.dispose();
+        do monster9.dispose();
+        do Memory.deAlloc(this);
+        return;
+    }
+
+}

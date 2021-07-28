@@ -1,0 +1,46 @@
+class Main {
+
+    function void main() {
+        var Game game;
+        var boolean win;
+        var boolean gameOver;
+
+        var int interval;
+        var int key;
+
+        let game = Game.new();
+        let win = false;
+        let gameOver = false;
+        let interval = 0;
+
+        do game.showInstructions();
+        do Sys.wait(7000);
+        do game.initBoard();
+
+        while ((~win) & (~gameOver)){
+            let key = Keyboard.keyPressed();
+            do game.moveHero(key);
+            let gameOver = game.failedGame();
+            let win = game.winGame();
+
+            if (interval > 2000) {
+                do game.moveMonsters();      
+                let gameOver = game.failedGame();
+                let interval = 0;
+            }
+            let interval = interval + 1;
+            let key = 0;
+        }
+
+        if(win){
+            do game.showWinMessage();
+        }
+
+        else{
+            do game.showFailedMessage();
+        }
+
+        do game.dispose();
+        return;
+    }
+}

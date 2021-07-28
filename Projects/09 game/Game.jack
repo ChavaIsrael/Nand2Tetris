@@ -1,0 +1,208 @@
+class Game {
+
+    field int xHero;
+    field int yHero; 
+    field int heroIndex;
+    field boolean win;
+    field boolean failed;
+
+    field GUI gameGUI;
+    field Array laddersArray;
+    field Monsters monsters;
+
+    constructor Game new() {
+
+        let win = false;
+        let failed = false;
+
+        let xHero = 0;
+        let yHero = 39; 
+        let heroIndex = 0;
+
+        let gameGUI = GUI.new();
+        let laddersArray = Array.new(8);
+        let laddersArray[0] = 4;
+        let laddersArray[1] = 23;
+        let laddersArray[2] = 10;
+        let laddersArray[3] = 18;
+        let laddersArray[4] = 7;
+        let laddersArray[5] = 30;
+        let laddersArray[6] = 15;
+        let laddersArray[7] = 2;
+
+        return this;
+    }
+
+    method void showInstructions(){
+        do Screen.setColor(false);
+        do Screen.drawRectangle(0, 0, 511, 255);
+        do Screen.setColor(true);
+        do Output.moveCursor(4, 8);
+        do Output.printString("Welcome!!");
+        do Output.moveCursor(8, 8);
+        do Output.printString("Try to get the treasure box");
+        do Output.moveCursor(10, 8);
+        do Output.printString("Be careful not to get hit by the monsters on the way");
+        do Output.moveCursor(14, 8);
+        do Output.printString("Good Luck!!!");
+        return;
+    }
+
+    method void initBoard() {
+        var int lineWidth;
+        var int lineCount;
+        var int currentLine;
+        var int floorWidth;
+        var int length;
+        var int currentY;
+        
+        let lineCount = 9;
+        let lineWidth = 2;
+        let currentLine = 0;
+        let floorWidth = 22;
+        let length = 511;
+        let currentY = 55;
+        
+        do Screen.setColor(true);
+        do Screen.drawRectangle(0, 0, 511, 255);
+
+        while (currentLine < lineCount) {
+            do Screen.setColor(false);
+            do Screen.drawRectangle(0, currentY, length, currentY + lineWidth);
+            let currentY = currentY + lineWidth + floorWidth;
+            let currentLine = currentLine + 1;
+        }
+
+        do addLadders();
+        do gameGUI.drawBox(29, 231);
+        do gameGUI.drawHero(xHero, yHero);
+        let monsters = Monsters.new();
+
+        return;
+    }
+ 
+    method void addLadders(){
+        var int index;
+        var int y;
+
+        let y = 57;
+        let index = 0;
+        
+        while (index < 8) {
+            do gameGUI.drawLadder(laddersArray[index], y);
+            let y = y + 24;
+            let index = index + 1;
+        }
+        return;
+   }
+
+   method boolean ladderExist(int x, int y){
+        if(laddersArray[(y-39)/24] = x){
+            return true;
+        }
+        return false;
+    }
+
+    method void moveHero(int key){
+        //right
+        if (key = 132) {
+            if(xHero < 31) {   
+                do gameGUI.removeHero(xHero + (heroIndex*15), yHero);
+                do addLadders();
+                let xHero = xHero + 1;
+                do gameGUI.drawHeroRight(xHero, yHero);
+                let heroIndex = heroIndex + 1;
+                do Sys.wait(100); 
+            }
+            if(xHero = 30 & yHero = 231){
+                let win = true;
+            }
+        }
+        //left
+        if (key = 130) {
+            if(xHero > 0) {   
+                do gameGUI.removeHero(xHero + (heroIndex*15), yHero);
+                do addLadders();
+                let xHero = xHero - 1;
+                do gameGUI.drawHeroLeft(xHero, yHero);
+                let heroIndex = heroIndex - 1;
+                do Sys.wait(100); 
+            }
+        }
+        //down
+        if (key = 133) {
+            if(yHero < 225 & (ladderExist(xHero, yHero) = true)) {   
+                do gameGUI.removeHero(xHero + (heroIndex*15), yHero);
+                do addLadders();
+                let yHero = yHero + 24;
+                do gameGUI.drawHeroBack(xHero, yHero);
+                do Sys.wait(100); 
+            }
+        }
+        //up
+        if (key = 131) {
+            if(yHero > 39 & (ladderExist(xHero, yHero - 24) = true)) {   
+                do gameGUI.removeHero(xHero + (heroIndex*15), yHero);
+                do addLadders();
+                let yHero = yHero - 24;
+                do gameGUI.drawHeroBack(xHero, yHero);
+                do Sys.wait(100); 
+            }
+        }
+        if(monsters.monsterExist(xHero, yHero)){
+            let failed = true;
+        }
+        return;
+    }
+
+    method void moveMonsters(){
+        do addLadders();
+        do monsters.run();
+        do gameGUI.drawBox(29, 231);
+        do gameGUI.drawHero(xHero, yHero);
+        if(monsters.monsterExist(xHero, yHero)){
+            let failed = true;
+        } 
+        return; 
+    }
+
+    method boolean winGame(){
+        return win;
+    }
+
+    method boolean failedGame(){
+        return failed;
+    }
+
+    method void showWinMessage(){
+        do Screen.setColor(false);
+        do Screen.drawRectangle(0, 0, 511, 255);
+        do Screen.setColor(true);
+        do Output.moveCursor(10, 25);
+        do Output.printString("Wowwwwwwwwww :)");
+        do Output.println();
+        do Output.moveCursor(12, 25);
+        do Output.printString("You Won!!");
+        return;
+    }
+
+    method void showFailedMessage(){
+        do Screen.setColor(false);
+        do Screen.drawRectangle(0, 0, 511, 255);
+        do Screen.setColor(true);
+        do Output.moveCursor(10, 25);
+        do Output.printString("Ho :(");
+        do Output.println();
+        do Output.moveCursor(12, 25);
+        do Output.printString("You Failed!!");
+        return;
+    }
+
+    method void dispose(){
+        do monsters.dispose();
+        do laddersArray.dispose();
+        do Memory.deAlloc(this);
+        return;
+    }
+
+}
