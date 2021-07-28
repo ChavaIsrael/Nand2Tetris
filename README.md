@@ -1,9 +1,7 @@
 ## Nand2Tetris
----
-From Nand to Tetris: Building a Modern Computer from First Principles
-by Nisan and Schocken
 
-[Nand2Tetris](http://nand2tetris.org/)
+From Nand to Tetris: Building a Modern Computer from First Principles
+by Nisan and Schocken [Nand2Tetris](http://nand2tetris.org/)
 
 - **Project 0** : Introduction
 - **Project 1**: Boolean Logic
