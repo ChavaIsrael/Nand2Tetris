@@ -1,50 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6cc890b1-0382-4df4-894f-a361add3562e" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="6cc890b1-0382-4df4-894f-a361add3562e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../01/And.hdl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01/And16.hdl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01/DMux.hdl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01/DMux4Way.hdl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01/DMux8Way.hdl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01/Mux.hdl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01/Mux16.hdl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01/Mux4Way16.hdl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01/Mux8Way16.hdl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01/Not.hdl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01/Not16.hdl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01/Or.hdl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01/Or16.hdl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01/Or8Way.hdl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01/Xor.hdl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02/ALU.hdl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02/Add16.hdl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02/And.hdl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02/FullAdder.hdl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02/HalfAdder.hdl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02/Inc16.hdl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03/a/Bit.hdl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03/a/PC.hdl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03/a/RAM64.hdl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03/a/RAM8.hdl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03/a/Register.hdl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03/b/RAM16K.hdl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03/b/RAM4K.hdl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03/b/RAM512.hdl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04/fill/Fill.asm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04/fill/FillAutomatic.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04/mult/Mult.asm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04/mult/Mult.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../05/CPU.hdl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../05/Computer.hdl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../05/Memory.hdl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/HackAssembler.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hackAssembler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parse.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symbols.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07/.idea/project07_ChavaIsrael_PninaWinegarten.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07/VMtranslator.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07/VMtranslator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07/codeWriter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07/parse.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../09 game/GUI.jack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../09 game/Game.jack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../09 game/Game.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../09 game/Main.jack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../09 game/Monster.jack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../09 game/Monsters.jack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hackAssembler.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/parse.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/symbols.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#75#600#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -57,6 +80,9 @@
     <findStrings>
       <find>print</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -81,6 +107,8 @@
     <option name="width" value="1350" />
     <option name="height" value="690" />
   </component>
+  <component name="ProjectId" id="1vxG1L1rVMz9552iYT1kiSZRNR2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -90,21 +118,14 @@
       <pane id="Scope" />
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Python.hackAssembler">
     <configuration name="HackAssembler" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -119,6 +140,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="D:\Users\User\Desktop\Studies\B שנה\nand2tetris\פרוייקטים\HackAssembler\hackAssembler.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -140,6 +162,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hackAssembler.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -156,6 +179,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -166,6 +190,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620676418272</updated>
+      <workItem from="1627496113221" duration="58000" />
     </task>
     <servers />
   </component>
@@ -190,6 +215,9 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/enum.py">
