@@ -1,8 +1,11 @@
 ## Monster Game
 
-Welcome      
+Welcome  
+    
 Try to get the treasure box
+
 Be careful not to get hit by the monsters on the way
+
 Good Luck!!!
 
 
